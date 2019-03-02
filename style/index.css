@@ -1,0 +1,242 @@
+
+/* Tirando a margem automatica do body e adicionando um PINGUINHO de padding pro canvas ocupar a tela toda */
+body {
+    margin: 0px;
+    padding-top: 0.1px;
+}
+
+/* Tag ANCHOR padrao */
+a {
+    cursor: pointer;
+    color: rgba(121, 121, 255, 0.938);
+    transition: color 0.4s ease-in-out;
+}
+a:visited {
+    color: rgba(91, 91, 175, 0.726);
+}
+a:hover {
+    color: rgba(227, 227, 255, 0.938);
+}
+
+/* tag UL padrao */
+ul {
+    padding: 0;
+}
+
+/* Nome */
+#myName a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#myName a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#myName a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Main DIV */
+#main {
+    font-family: Impact;
+    font-size: 20px;
+    color: rgba(244, 244, 244, 0.8);
+
+    text-align: center;
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+/* Container da imagem */
+#imgContainer {
+    height: 320px;
+}
+
+/* Imagem */
+#myImage {
+
+    /* Ajustamento para nao mover o resto da pagina ao ampliar a imagem */
+    position: absolute;
+    
+    margin: auto;
+    left: 0px;
+    right: 0px;
+
+    /* Estilo */
+    border-radius: 50%;
+    border: 20px solid rgba(222, 222, 222, 0.1);
+    width: 256px;
+    height: 256px;
+    transform: scale(1);
+    transition: 0.2s ease-in-out;
+}
+#myImage:hover {
+    transform: scale(1.1);
+}
+
+/* Nome */
+#myName {
+    width: 20%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: 'Consolas';
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.5);
+    animation: glow 1.2s infinite alternate;
+}
+/* Efeito de brilho no nome */
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.897);
+    } to {
+        text-shadow: 
+            0px 0px 30px rgba(255, 255, 255, 0.897),
+            0px 0px 60px rgba(255, 255, 255, 0.897)
+    }
+}
+
+/* Lista de links */
+#myList {
+    padding: 8px 2.6%;
+    border: 3px solid rgba(10, 10, 10, 0.9);
+    border-radius: 17px;
+    background: rgba(20, 20, 20, 0.8);
+    list-style-type: disc;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0px 10px 20px rgba(10, 10, 10, 1);
+}
+#myList li.item {
+    color: rgba(196, 210, 226, 0.7);
+    transition: color 0.4s ease-in-out;
+}
+#myList li.item a {
+    cursor: pointer;
+}
+#myList li.item:hover {
+    color: rgba(255, 255, 255, 0.863);
+}
+
+ul.topicList {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Canvas como um background fixo e atras de tudo */
+#myCanvas {
+    position: fixed;
+    z-index: -1;
+}
+
+/* hr */
+hr {
+    margin-top: 1%;
+    padding-bottom: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    box-shadow: 0px 0px 25px white;
+}
+hr.small {
+    width: 20%;
+}
+hr.medium {
+    width: 30%;
+}
+hr.large {
+    width: 40%;
+}
+
+/* Lista de sites preferidos */
+#sites {
+    padding-top: 10px;
+    list-style-type: none;
+    display: inline-block;
+}
+#sites li {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    float: left;
+}
+#sites li img {
+    border-radius: 20%;
+    border: 5px solid rgba(222, 222, 222, 0.1);
+    width: 128px;
+    height: 128px;
+    transform: scale(1);
+    transition: 0.2s ease-in-out;
+}
+#sites li img:hover {
+    transform: scale(1.2);
+}
+
+.topicContainer {
+    margin: auto;
+}
+
+/* Titulo do bloco */
+.topicHeader {
+    margin: auto;
+    margin-top: 2%;
+    font-family: 'Times New Roman';
+    font-size: 38px;
+
+    padding: 3px 2px;
+    box-shadow: 0px 10px 20px rgb(2, 2, 29);
+    border-radius: 17px;
+    border: 3px solid rgba(18, 142, 151, 0.4);
+    background: rgba(24, 66, 100, 0.5);
+}
+
+/* Conteudo do bloco */
+.topicBlock {
+    margin: auto;
+    margin-top: 0.1%;
+    margin-bottom: 2%;
+
+    padding: 10px 30px;
+    box-shadow: 0px 10px 20px rgb(15, 2, 29);
+    border-radius: 15px;
+    border: 3px solid rgba(117, 82, 214, 0.4);
+    background: rgba(6, 1, 20, 0.5);
+}
+
+#voltarScroll {
+    position: absolute;
+    left: 1%;
+    padding-bottom: 12px;
+}
+
+h2.endereco {
+    width: 20%;
+}
+h2.formacaoAcademica {
+    width: 35%;
+}
+h2.atividadeProfissional {
+    width: 37%;
+}
+h2.sitesPreferidos {
+    width: 30%;
+}
+
+p.endereco {
+    width: 30%;
+}
+p.formacaoAcademica {
+    width: 53%;
+}
+p.atividadeProfissional {
+    width: 15%;
+}
+p.sitesPreferidos {
+    width: 50%;
+}
