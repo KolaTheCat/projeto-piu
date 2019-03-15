@@ -44,7 +44,7 @@ ul {
     color: rgba(244, 244, 244, 0.8);
 
     text-align: center;
-    animation: fadeIn 1s;
+    animation: fadeIn 1.5s;
 }
 @keyframes fadeIn {
     from { 
