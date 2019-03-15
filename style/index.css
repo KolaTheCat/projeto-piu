@@ -75,10 +75,10 @@ ul {
     width: 256px;
     height: 256px;
     transform: scale(1);
-    transition: 0.2s ease-in-out;
+    transition: 1s ease-in-out;
 }
 #myImage:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Nome */
